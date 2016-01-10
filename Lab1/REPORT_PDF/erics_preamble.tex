@@ -1,0 +1,60 @@
+%&pdflatex
+\documentclass[amsmath,aps,pra,amssymb,nofootinbib,notitlepage, twocolumn]{revtex4-1} % twocolumn
+\bibliographystyle{apsrev}
+\usepackage{dsfont} % DoubleStroke
+% Pictures - ------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[font=small]{caption}
+% MATH -----------------------------------------------------------
+\usepackage{amsfonts,amsmath,amssymb,mathrsfs,amsthm}
+\usepackage{bm} % bolding math
+\usepackage{braket} % Eg: \bra{} and \ket{} and \braket{|}
+\newcommand{\norm}[1]{\left\| #1 \right\|} % Magnitude bars 
+\let\conj\overline % For conjugates. 
+
+\newcommand{\captionC}[1]{\caption{\emph{#1}}}
+%\renewcommand{\thesection}{\S\arabic{section}} % starts each section with fancy section sign
+\DeclareMathOperator{\Lagr}{\mathcal{L}}
+\DeclareMathOperator{\Act}{\mathcal{S}}
+\DeclareMathOperator{\Dif}{\mathcal{D}} % Differential over all space
+
+\newcommand*\diff{\mathop{}\!\mathrm{d}} % Cooler integration 
+\usepackage{mathtools} % For easier matrices 
+
+% Formatting -----------------------------------------------------
+\usepackage{setspace}
+\usepackage{bm}
+
+\usepackage[margin=0.4in]{geometry}
+\usepackage{tikz}
+
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+\normalsize
+\usepackage{color,xcolor} % Nice colours
+
+%\SetTexturesEPSFSpecial  % use this for the Mac & Textures
+%\HideDisplacementBoxes % This is for EPS files
+\usepackage{cancel}
+
+
+\usepackage[unicode,breaklinks]{hyperref}
+\usepackage{url}
+\hypersetup{
+    unicode=true,
+    a4paper=true,
+    plainpages=false, 
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=red,
+    filecolor=black,
+    urlcolor=blue
+} % Colours of the links
+\urlstyle{rm}
+\usepackage{minted}
+\usemintedstyle{pastie} %trac is default, friendly is good too
+%\setstretch{1.5} % This is basically our spacing
+
+\def\preambleloaded{}
+%% end of preamble.tex
